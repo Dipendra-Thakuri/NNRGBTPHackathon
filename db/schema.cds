@@ -23,13 +23,13 @@ entity BusinessPartner: cuid, managed {
     @title: 'PIN Code'
     pin_code: String(10) @mandatory;
     @title: 'Is GSTN Registered'
-    is_gstn_registered: Boolean;
+    is_gstn_registered: Boolean default false;
     @title: 'GSTIN Number'
     gstin_number: String(15) @mandatory;
     @title: 'Is Vendor'
-    is_vendor: Boolean;
+    is_vendor: Boolean default false;
     @title: 'Is Customer'
-    is_customer: Boolean;
+    is_customer: Boolean default false;
 
 }
 
