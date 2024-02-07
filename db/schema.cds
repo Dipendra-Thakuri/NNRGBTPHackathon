@@ -70,3 +70,36 @@ entity Products: cuid, managed {
     @title: 'Sell Price'
     sell_price: String(10) @mandatory;
 }
+
+entity StoreData: cuid, managed {
+    store_id: String(10) @mandatory;
+    product_id: String(10) @mandatory;
+    stock_qty: String(10) @mandatory;
+}
+/*
+entity PurchaseApp cuid, managed {
+    @title: 'Purchase Order No.'
+    purchase_order_no: String(10) @mandatory;
+    @title: 'BusinessPartner'
+    BusinessPartner: Composition of many {
+        key ID: UUID;
+        bp: Association to BusinessPartner;
+    }
+    @title: 'Purchase Order Date'
+    purchase_order_date: Date @mandatory;
+    @title: 'Items'
+    Items:
+}
+
+entity Items: cuid, managed {
+    @title: 'Product ID'
+    p_id: Association to Products on p_id.product_id = product_ID;
+    product_ID: type of Products:product_id
+    @title: 'Quantity'
+    quantity: String(10) @mandatory;
+    @title: 'Price'
+    price: Association to Products on price.cost_price = price_product;
+    price_product: type of Products:cost_price
+    @title: 'Store'
+    store: Association to Store;
+} */
