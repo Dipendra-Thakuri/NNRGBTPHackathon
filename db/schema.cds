@@ -4,7 +4,7 @@ using { managed, cuid } from '@sap/cds/common';
 
 entity BusinessPartner: cuid, managed {
     @title: 'Number'
-    number: Integer @mandatory;
+    number: String(10) @mandatory;
     @title: 'Name'
     name: String(50) @mandatory;
     @title: 'Address 1'

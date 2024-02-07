@@ -1,8 +1,9 @@
 using { selectelectronicsDB } from './service';
 
 annotate selectelectronicsDB.BusinessPartner with {
-    number @assert.format: '^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$';
-    pin_code @assert.format: '^\d{2}[A-Z]{5}\d{4}[A-Z]{1}\d[Z]{1}\d{1}$';
+    number @assert.format: '^[6-9]\d{9}$';
+    pin_code @assert.format: '^\d{6}$';
+    gstin_number @assert.format: '^\d{2}[A-Z]{5}\d{4}[A-Z]{1}\d[Z]{1}\d{1}$';
 }
 
 annotate selectelectronicsDB.BusinessPartner with @(
