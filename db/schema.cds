@@ -41,7 +41,7 @@ entity States {
     description: String(20);
 }
 
-entity Stores: uuid, managed {
+entity Stores: cuid, managed {
     @title: 'Store ID'
     store_id: String(10) @mandatory;
     @title: 'Name'
@@ -49,11 +49,24 @@ entity Stores: uuid, managed {
     @title: 'Address 1'
     address1: String(100) @mandatory;
     @title: 'Address 2'
-    address1: String(100) @mandatory;
+    address2: String(100) @mandatory;
     @title: 'City'
     city: String(20) @mandatory;
     @title: 'State'
     state: Association to States;
     @title: 'PIN Code'
     pin_code: String(10) @mandatory;
+}
+
+entity Products: cuid, managed {
+    @title: 'Products ID'
+    product_id: String(10) @mandatory;
+    @title: 'Name'
+    name: String(40) @mandatory;
+    @title: 'URL'
+    url: String(100) @mandatory;
+    @title: 'Cost Price'
+    cost_price: String(10) @mandatory;
+    @title: 'Sell Price'
+    sell_price: String(10) @mandatory;
 }
