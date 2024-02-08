@@ -31,7 +31,7 @@ annotate selectelectronicsDB.Stores with @(
             Value : pin_code
         },
     ],
-    UI.SelectionFields: [ name, number, address1, city, state_code, pin_code ],       
+    UI.SelectionFields: [ name, address1, city, state_code, pin_code ],       
     UI.FieldGroup #StoresInformation : {
         $Type : 'UI.FieldGroupType',
         Data : [

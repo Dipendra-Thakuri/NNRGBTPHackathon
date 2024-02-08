@@ -1,2 +1,2 @@
-number,name,address1,address2,city,pin_code,gstin_number
-"9182304021","Dipendra Thakuri",BodUppal, Bheem Reddy Nagar","Medipally, NIN Colony","Hyderabad","500092"
+number,name,address1,address2,city,state_code,pin_code,gstin_number
+1,Dipendra Thakuri,"BodUppal, Bheem Reddy Nagar","Medipally, NIN Colony",Hyderabad,Telangana,500092,29ABCDE1234F1Z5

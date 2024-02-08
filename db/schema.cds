@@ -2,14 +2,9 @@ namespace selectelectronics.store;
 
 using { managed, cuid } from '@sap/cds/common';
 
-@assert.unique:{
-    number:[number],
-    gstin_number:[gstin_number]
-}
-
 entity BusinessPartner: cuid, managed {
-    @title: 'Number'
-    number: String(10) @mandatory;
+    @title: 'S.No'
+    number: Integer;
     @title: 'Name'
     name: String(50) @mandatory;
     @title: 'Address 1'
@@ -71,6 +66,7 @@ entity Products: cuid, managed {
     sell_price: String(10) @mandatory;
 }
 
+/*
 entity StoreData: cuid, managed {
     store_id: String(10) @mandatory;
     product_id: String(10) @mandatory;
@@ -97,4 +93,4 @@ entity Items: cuid, managed {
     price: String(10);
     @title: 'Store'
     store: String(10);
-}
+} */
